@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+body{
+    background: rgb(129, 129, 64);
+   
+    color: #fff;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+/* TOP LEFT MENU  */
+.top-left{
+    position: relative;
+    font-size: 20px;
+    color: peachpuff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+                        /* TOP LEFT ANIMATION MENU  */
+.top-left::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:rgb(129, 129, 64);
+        animation: showRight 1s ease forwards;
+        animation-delay: .4s;
+
+}
+
+
+                               /* TOP RIGHT MENU */
+
+.top-right a{
+
+font-size: 15px;
+color:peachpuff ;
+text-decoration: none;
+font-weight: 600;
+margin-left: 35px;
+transition: 0.5s
+}
+
+                 /* TOP ANIMATION MENU  */
+
+.top-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+
+}
+
+.top-right a:hover,
+.top-right a.active{
+    color: #232323;
+  
+}
+    /*HOME MENU*/
+.home{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+                     /* HOME CONTENT H1 MENU  */
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3{
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: #454545;
+}
+             
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.1s;
+
+}
+.home-content p{
+    position: relative;
+    font-size: 17px;
+    margin: 20px 0 40px;
+}
+.home-content P::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+
+}
+                            /* home-content button MENU  */
+
+.home-content .button{
+   position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+}
+.home-content .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.4s;
+    z-index: 2;
+
+}
+                            /* CLASS BUTTON MENU  */
+.button a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background: #454545;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+.button a:nth-child(2) {
+    background: transparent;
+}
+.button a:nth-child(2)::before{
+    background: #454545;
+}
+.button a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(129, 129, 64);
+    z-index: -1;
+    transition: .5s;
+}
+.button a:hover::before {
+     width: 100%;
+}
+
+                    /* ICON MENU  */
+.social-icon {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(129, 129, 64);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.8s;
+    z-index: 2;
+
+}
+.social-icon a {
+         position: relative;
+         justify-content: center;
+         align-items: center;
+         display: inline-flex;
+         width: 40px;
+         height: 40px;
+         border: 2px solid  #454545;
+         border-radius: 50%;
+         font-size: 20px;
+         color: #ffffff;
+         text-decoration: none;
+         overflow: hidden;
+         z-index: 1;
+         transition: .5s;
+
+}
+.social-icon a:nth-child(2n+1) {
+    background: #454545;
+}
+.social-icon a:nth-child(2n+1)::before {
+    background: rgb(129, 129, 64);
+}
+
+.social-icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #454545;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.social-icon a:hover:before {
+    width: 100%;
+}
+
+/* KEYFRAME AANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+
